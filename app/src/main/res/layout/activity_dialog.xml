@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="权限设置引导"/>
+        <TextView
+            android:id="@+id/permission_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:text="找到“橙讯对讲”，并打开相应开关"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|right"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="9dp">
+        <ImageView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/permission_del"/>
+    </LinearLayout>
+
+</LinearLayout>
