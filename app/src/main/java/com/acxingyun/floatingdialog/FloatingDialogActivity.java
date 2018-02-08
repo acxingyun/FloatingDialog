@@ -113,4 +113,10 @@ public class FloatingDialogActivity extends AppCompatActivity {
             mWm = null;
         }
     }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        removeDialog();
+    }
 }
